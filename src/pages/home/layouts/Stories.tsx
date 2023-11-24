@@ -17,7 +17,7 @@ const Stories = (props: Props) => {
             console.log('asdasdasdasd')
             const {data} = await axios.get(`${url}/story`);
             console.log('data',data)
-            // setStories(data);
+            setStories(data);
         }catch(err:any){
             console.log(err);
             // setStories({})

@@ -1,4 +1,4 @@
 export  const global = {
-    name:'Instagram',
+    name:'GraFace',
 }
 

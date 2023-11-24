@@ -7,8 +7,8 @@ type Props = {}
 
 const NameSection = (props: Props) => {
   return (
-    <div className='flex place-content-between w-full h-full text-white  pl-2 items-center'>
-    <div>{global.name}</div>
+    <div className='flex place-content-between w-full h-full text-white  pl-2 items-center border-b border-gray-700'>
+    <div className='text-xl'>{global.name}</div>
     <div className='flex gap-5'>
       <div>{<SettingsIcon scale={50} />}</div>
 
@@ -22,7 +22,6 @@ const NameSection = (props: Props) => {
             </div>
           </div>
           <div className=" " onClick={() => {}} >
-            {/* <ListIcon fontSize="large" className="cursor-pointer scale-105" /> */}
           </div>
     </div>
     </div>
