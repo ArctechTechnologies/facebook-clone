@@ -8,51 +8,7 @@ type Props = {}
 
 const Page = (props: Props) => {
    const [animate,setAnimate] = useState('animate-pulse')
-   const [posts,setPosts] = useState<IPOST[]>([
-    
-      {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      },  {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      },  {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      },  {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      },  {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      },  {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      }, {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      }, {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      }, {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      }, {
-        description: 'sadasdasdasdasdsdhfgu urgfu kukefg auegfus rghieuhf uagf iaseygfa wuaugf jgvef ygdpaygf uwevfu aegfimye gfyweg fiywegf ibhksbd aseui fngweifbwui efw7efy wug',
-        uid: 'asdasdasdas',
-        media: 'https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg'
-      },
-    
-   ])
+   const [posts,setPosts] = useState<IPOST[]>([])
   return (
     <div className='bg-black h-screen w-screen'>
       <div className='h-[92%] overflow-auto bg-black'>
@@ -77,7 +33,7 @@ const Page = (props: Props) => {
                 {posts.map((index:IPOST)=>{
                 return <>
                   <div className={`h-[11rem] w-full  bg-[#28282B]   `}>
-                       <img src={index.media} className='w-full h-full' />
+                       <img title='asdas' src={index.media} className='w-full h-full' />
                   </div>
                 </>
                })}
